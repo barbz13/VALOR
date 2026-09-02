@@ -15,14 +15,14 @@ html, body {
     margin: 5px;
     padding: 0;
     min-height: 100vh; /* Forces the body to be at least the full height of the monitor */
-    /*display: flex;
-    flex-direction: column;
-    box-sizing: border-box;*/
+    background-color: #10131c; /* Applied only to the body background */
+    color: #e2e8f0;
 }
 
 header {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 header img {
@@ -30,41 +30,101 @@ header img {
     width: 500px;
     height: 250px;
     border-radius: 1em;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
 }
+
 
 nav {
-    border-radius: 0.5em; /*This rounds the corners of elements.*/
-    margin-bottom: 0.5em; /*This places some space between elements.*/
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
-nav ul{
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
     padding: 0;
-    margin-top: 0.1em;
+    margin-top: 0.5em;
     margin-bottom: -0.5em;
+    list-style-type: none;
 }
 
 nav ul li {
-    color: rgb(24, 221, 50);
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    margin: .2em;
-    list-style-type: none; /*This removes bullet points.*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0.2em;
 }
 
 a {
-  color: #D4AF37; /* Warm antique gold */
-  text-decoration: none;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Heavy shadow to lift text off the dark background */
-  font-weight: bold;
-  letter-spacing: 0.05em;
+    display: inline-block;
+    color: #bce6ef; /* Warm antique gold */
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgba(246, 242, 242, 0.9); /* Heavy shadow to lift text off the dark background */
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 1.3rem;
 }
 
 a:hover {
   color: #FFD700; /* Brighter gold on hover */
-  text-shadow: 0 0 8px rgba(212, 175, 55, 0.6); /* Glowing golden effect */
+  text-shadow: 0 0 8px rgba(255, 211, 65, 0.854); /* Glowing golden effect */
+}
+
+main h1 {
+    font-size: 1.8rem;
+    text-decoration: ;
+}
+
+body {
+    text-align: center;
+}
+
+/* --- TABLE STYLING --- */
+
+.sanctuary table {
+    border: 0.1em solid #806b26;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.4); /* Slight dark backdrop for readability.*/
+}
+
+.sanctuary caption {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #FFD700;
+}
+
+.sanctuary th, .sanctuary td {
+    border: 0.1em solid #806b26;
+    padding: 12px 16px;    /* Adds breathing room so text isn't cramped.*/
+    color: #f0f0f0;
+}
+
+.sanctuary th {
+    background-color: rgba(212, 175, 55, 0.15); /* Subtle gold tint for headers */
+    font-weight: 600;
+}
+
+.sanctuary th:nth-child(1), .sanctuary td:nth-child(1) {
+    width: 35%;            /* Shrinks the first column down */
+    text-align: center;    /* Centers the level text nicely */
+}
+
+.sanctuary th:nth-child(2), .sanctuary td:nth-child(2) {
+    width: 45%;            /* Gives the majority of the space to the building requirements */
+    text-align: center;
+}
+
+.sanctuary th:nth-child(3), .sanctuary td:nth-child(3) {
+    width: 20%;            /* Keeps the time column compact and neat */
+    text-align: center;    
 }
