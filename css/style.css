@@ -1,0 +1,70 @@
+@import url("mobilestyle.css");
+@import url("tabletstyle.css");
+
+* {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em; /* Gives it an epic, spread-out monumental feel */
+  /*text-transform: uppercase;*/
+  color: #e2e8f0;
+  text-shadow: 2px 2px 4px rgba(240, 166, 27, 0.8);
+  background-color: #10131c;
+}
+
+html, body {
+    margin: 5px;
+    padding: 0;
+    min-height: 100vh; /* Forces the body to be at least the full height of the monitor */
+    /*display: flex;
+    flex-direction: column;
+    box-sizing: border-box;*/
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    display: block;
+    width: 500px;
+    height: 250px;
+    border-radius: 1em;
+}
+
+nav {
+    border-radius: 0.5em; /*This rounds the corners of elements.*/
+    margin-bottom: 0.5em; /*This places some space between elements.*/
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.1em;
+    margin-bottom: -0.5em;
+}
+
+nav ul li {
+    color: rgb(24, 221, 50);
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin: .2em;
+    list-style-type: none; /*This removes bullet points.*/
+}
+
+a {
+  color: #D4AF37; /* Warm antique gold */
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Heavy shadow to lift text off the dark background */
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+a:hover {
+  color: #FFD700; /* Brighter gold on hover */
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.6); /* Glowing golden effect */
+}
