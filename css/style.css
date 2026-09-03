@@ -181,5 +181,19 @@ body {
     border-bottom: 1px solid transparent;
     padding-bottom: 4px;
     border-image: linear-gradient(to right, transparent, rgba(122, 235, 255, 0.6), transparent) 1;
+}
 
+.kvk h1 {
+    color: rgb(246, 30, 30);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(199, 236, 207, 0.8);
+}
+
+.kvk p {
+    font-size: 2rem;
+}
+
+.tenor-gif-embed {
+    height: fit-content;
+    width: auto;
 }
