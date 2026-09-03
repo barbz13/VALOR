@@ -32,6 +32,10 @@ header img {
     border-radius: 1em;
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
     mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+                linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-composite: intersect; /* Use 'intersect' for standard CSS or 'source-in' for WebKit */
 }
 
 
@@ -194,6 +198,11 @@ body {
 }
 
 .tenor-gif-embed {
-    height: fit-content;
-    width: auto;
+    border-radius: 1em;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+                linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-composite: intersect; /* Use 'intersect' for standard CSS or 'source-in' for WebKit */
 }
