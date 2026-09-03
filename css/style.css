@@ -74,7 +74,7 @@ a:hover {
   text-shadow: 0 0 8px rgba(255, 211, 65, 0.854); /* Glowing golden effect */
 }
 
-main h1 {
+.sanctuarytitles h1 {
     font-size: 1.8rem;
     text-decoration: ;
 }
@@ -127,4 +127,59 @@ body {
 .sanctuary th:nth-child(3), .sanctuary td:nth-child(3) {
     width: 20%;            /* Keeps the time column compact and neat */
     text-align: center;    
+}
+
+.rules h1 {
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    /* Creates a gradient line that fades to transparent at the ends */
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, #D4AF37, transparent) 1;
+}
+
+.rules h2 {
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.6), transparent) 1;
+}
+
+.leadership-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.role-card {
+    border-radius: 0.8em;                /* Rounded corners like game UI */
+    padding: 20px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/*.leadership-container h1 {
+    font-size: 2.2rem;
+    color: #D4AF37;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    /*border-image: linear-gradient(to right, transparent, #7aebff, transparent) 1;
+}*/
+
+.role-card h2 {
+    font-size: 1.4rem;
+    color: #FFD700;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+    border-image: linear-gradient(to right, transparent, rgba(122, 235, 255, 0.6), transparent) 1;
+
 }
